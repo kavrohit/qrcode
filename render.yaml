@@ -8,7 +8,7 @@ services:
 - name: qrcode-web
   type: web
   env: static
-  buildCommand: yarn install && yarn rw deploy render web
+  buildCommand: yarn rw deploy render web
   staticPublishPath: ./web/dist
   envVars:
   - key: NODE_VERSION
@@ -23,7 +23,7 @@ services:
 # example:
 #   destination: https://myredwoodproject-api.onrender.com/*
 #####
-    destination: replace_with_api_url/*
+    destination: https://qrcode-web.onrender.com/*
   - type: rewrite
     source: /*
     destination: /index.html
