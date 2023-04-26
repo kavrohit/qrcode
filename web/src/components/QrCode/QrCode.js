@@ -1,5 +1,5 @@
 import React from 'react'
-import './QrCode.css'
+import './QrCodeCss.css'
 const QRCodeComponent = ({ generate }) => {
   const [qrCode, setQrCode] = React.useState('')
   const [url, setUrl] = React.useState('')

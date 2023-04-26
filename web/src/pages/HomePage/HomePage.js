@@ -1,7 +1,6 @@
-import QRCode from 'qrcode'
-
 import QRCodeComponent from 'src/components/QRCode/QrCode'
 
+const QRCode = require('qrcode')
 
 const HomePage = () => {
   const generateQRCode = async (url) => {
