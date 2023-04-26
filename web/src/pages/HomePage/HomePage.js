@@ -1,4 +1,4 @@
-import QRCodeComponent from 'src/components/QRCode/QrCode'
+import QRCodeComponent from 'src/components/QrCode/QrCode'
 
 const QRCode = require('qrcode')
 
