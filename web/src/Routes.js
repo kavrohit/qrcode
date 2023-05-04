@@ -1,10 +1,14 @@
-import { Router, Route } from '@redwoodjs/router'
+import { Set, Router, Route } from '@redwoodjs/router'
 
+import ScaffoldLayout from 'src/layouts/ScaffoldLayout'
 const Routes = () => {
   return (
     <Router>
+      <Set wrap={ScaffoldLayout} title="QrCodes" titleTo="qrCodes" buttonLabel="New QrCode" buttonTo="newQrCode">
+      </Set>
       <Route path="/" page={HomePage} name="home" />
-      {/* <Route path="/qrcode/{id:Int}" page={QrCodePage} name="qrCode" /> */}
+      {/* <Routes path="/posts" page={getPosts} name="posts" /> */}
+      {/* */}
     </Router>
   )
 }
